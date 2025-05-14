@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nezif Tayib | Web Developer</title>
+    <meta name="description" content="Portfolio of Nezif Tayib, a web developer showcasing projects like To-Do List, Chat App, and Expense Tracker.">
+    <meta name="keywords" content="Nezif Tayib, web developer, portfolio, To-Do List, Chat App, Expense Tracker">
+    <meta property="og:title" content="Nezif Tayib | Web Developer">
+    <meta property="og:description" content="Explore my projects and skills as a web developer.">
+    <meta property="og:image" content="20250317_205006.jpg"> 
+    <meta property="og:url" content="https://github.com/mamacite"> 
+    
+    <!-- Favicon -->
+    <link rel="icon" type="photo_2024-06-11_17-17-02.jpg" href="images/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Nezif<span>Tayib</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Hello, I'm <span>Nezif Tayib</span></h1>
+                <h2>Web Developer & Designer</h2>
+                <p>I create beautiful and functional websites with modern technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/mamacite" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <span>Scroll Down</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-container">
+                        <img src="20250317_205006.jpg" alt="Nezif Tayib" class="profile-picture">
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Hello, I'm Nezif!</h3>
+                    <p>I am a passionate web developer with a keen eye for detail and a commitment to creating beautiful, functional websites. I love creating beautiful websites and developing best Frontend.</p>
+                    <p>With expertise in modern web technologies, I build responsive, user-friendly applications that deliver exceptional user experiences.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Nezif Tayib</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>nezif223@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span>
+                            <p>Adama,Ethiopia</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Freelance:</span>
+                            <p>Available</p>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#resume" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid" data-aos="fade-up">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="todolist.jpg" alt="To-Do List App">
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do List App</h3>
+                        <p>A user-friendly application that allows you to manage tasks efficiently. Users can add, edit, and delete tasks.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mamacite.github.io/To-Do-List/" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/mamacite/To-Do-List" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="chatapp.jpg" alt="Chat Application">
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat Application</h3>
+                        <p>A real-time chat application with WebSocket support, allowing for private messaging and group chats.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mamacite.github.io/Chat-app/" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/mamacite/Chat-app" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="exp tra.png" alt="Expense Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3>Expense Tracker</h3>
+                        <p>This app helps users track income and expenses, with visualizations for spending habits.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mamacite.github.io/Expense-Tracker/" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/mamacite/Expense-Tracker" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="portifolio.png" alt="Portfolio Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Design</h3>
+                        <p>A modern portfolio design created with attention to detail and user experience.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-sm">View Design</a>
+                            <a href="#" target="_blank" class="btn btn-sm btn-secondary">Process</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="weather.png" alt="Fitness App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts, nutrition, and fitness progress.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-sm">App Store</a>
+                            <a href="#" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="wetherapp.jpg" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather application that provides current and forecasted weather data for any location.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="#" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-text" data-aos="fade-right">
+                    <h3>My Creative Skills & Experiences</h3>
+                    <p>I have experience working with a variety of technologies and frameworks. My focus is on creating responsive, accessible, and performant web applications that provide excellent user experiences.</p>
+                    <p>I continuously learn and adapt to new technologies to stay current with industry trends and best practices.</p>
+                </div>
+                <div class="skills-bars" data-aos="fade-left">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-icons" data-aos="fade-up">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-icon">
+                    <i class="fab fa-sass"></i>
+                    <span>Sass</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Testimonials</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-container">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Working with Nezif was a pleasure! They delivered our project on time and exceeded our expectations. Their attention to detail and problem-solving skills are impressive.</p>
+                            <div class="testimonial-author">
+                                <img src="sarah.jpg" alt="Sarah Johnson">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CEO, TechStart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Nezif created an amazing website for our business. The design is modern, clean, and exactly what we were looking for. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="michael chen.jpg" alt="Michael Chen">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <p>Marketing Director, Innovate Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>I was impressed by Nezif's technical knowledge and creativity. They took our vague ideas and transformed them into a beautiful, functional website.</p>
+                            <div class="testimonial-author">
+                                <img src="Emilly.jpg" alt="Emily Rodriguez">
+                                <div>
+                                    <h4>Emily Rodriguez</h4>
+                                    <p>Founder, DesignHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="testimonial-form-container" data-aos="fade-up">
+                <h3>Share Your Experience</h3>
+                <form id="testimonial-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Testimonial" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Testimonial</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Latest Blog Posts</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="blog-grid" data-aos="fade-up">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="js promices.png" alt="JavaScript Promises">
+                        <div class="blog-date">
+                            <span>15</span>
+                            <span>May</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-info">
+                            <span><i class="fas fa-user"></i> Nezif Tayib</span>
+                            <span><i class="fas fa-tag"></i> JavaScript</span>
+                        </div>
+                        <h3>Understanding JavaScript Promises</h3>
+                        <p>A deep dive into JavaScript promises, how they work, and why they are essential for modern web development.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="css grid vs flexbox.png" alt="CSS Grid vs Flexbox">
+                        <div class="blog-date">
+                            <span>28</span>
+                            <span>Apr</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-info">
+                            <span><i class="fas fa-user"></i> Nezif Tayib</span>
+                            <span><i class="fas fa-tag"></i> CSS</span>
+                        </div>
+                        <h3>CSS Grid vs Flexbox</h3>
+                        <p>An overview of CSS Grid and Flexbox, comparing their use cases and when to choose one over the other.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="reeact hooks.png" alt="React Hooks">
+                        <div class="blog-date">
+                            <span>10</span>
+                            <span>Apr</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-info">
+                            <span><i class="fas fa-user"></i> Nezif Tayib</span>
+                            <span><i class="fas fa-tag"></i> React</span>
+                        </div>
+                        <h3>Getting Started with React Hooks</h3>
+                        <p>Learn how to use React Hooks to simplify your components and manage state more effectively.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Get In Touch</h3>
+                    <p>Have a question or want to work together? Feel free to reach out to me using the contact form or through any of the channels below.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>nezif223@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+251972362799</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Adama,Ethiopia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/mamacite" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p id="response-message" class="form-response"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section id="comment" class="comment">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Leave a Comment</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="comment-content">
+                <div class="comment-list" data-aos="fade-right">
+                    <h3>Recent Comments</h3>
+                    <div class="comment-item">
+                        <div class="comment-avatar">
+                            <img src="Alex.jpg" alt="Alex Thomson">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-info">
+                                <h4>Alex Thompson</h4>
+                                <span>2 days ago</span>
+                            </div>
+                            <p>Great portfolio! I especially like the project carousel.</p>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">
+                            <img src="Jamie.jpg" alt="Jamie Wilson">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-info">
+                                <h4>Jamie Wilson</h4>
+                                <span>1 week ago</span>
+                            </div>
+                            <p>Your skills are impressive. Would love to collaborate on a project sometime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-form-container" data-aos="fade-left">
+                    <h3>Add Your Comment</h3>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <input type="text" id="comment-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="comment-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment-text" rows="4" placeholder="Your Comment" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post Comment</button>
+                    </form>
+                    <p id="response-comment" class="form-response"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Resume</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-content">
+                <div class="resume-column" data-aos="fade-right">
+                    <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                    <div class="resume-item">
+                        <span class="date">2023 - Present</span>
+                        <h4>Senior Web Developer</h4>
+                        <p class="company">Tech Solutions Inc.</p>
+                        <p>Led the development of multiple web applications using React and Node.js. Implemented CI/CD pipelines and mentored junior developers.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">2021 - 2023</span>
+                        <h4>Web Developer</h4>
+                        <p class="company">Digital Creations</p>
+                        <p>Developed responsive websites and web applications for clients across various industries. Worked with React, JavaScript, and CSS frameworks.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">2020 - 2021</span>
+                        <h4>Frontend Developer Intern</h4>
+                        <p class="company">WebTech Startup</p>
+                        <p>Assisted in the development of user interfaces using HTML, CSS, and JavaScript. Participated in code reviews and team meetings.</p>
+                    </div>
+                </div>
+                <div class="resume-column" data-aos="fade-left">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="resume-item">
+                        <span class="date">2017 - 2021</span>
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p class="company">University of Technology</p>
+                        <p>Focused on web development, algorithms, and software engineering. Graduated with honors.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">2020</span>
+                        <h4>Full Stack Web Development Bootcamp</h4>
+                        <p class="company">Code Academy</p>
+                        <p>Intensive 12-week program covering modern web development technologies and practices.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">2019</span>
+                        <h4>UI/UX Design Certificate</h4>
+                        <p class="company">Design Institute</p>
+                        <p>Learned principles of user interface and user experience design, including wireframing, prototyping, and user testing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-download" data-aos="fade-up">
+                <a href="resume.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Full Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Nezif Tayib</h3>
+                    <p>Web developer passionate about creating beautiful and functional websites.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mamacite" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkdin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>Adama,Ethiopia</p>
+                    <p><i class="fas fa-envelope"></i> nezif223@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +251972362799</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nezif Tayib. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Nezif Tayib</p>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
